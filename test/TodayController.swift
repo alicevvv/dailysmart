@@ -34,9 +34,14 @@ class TodayController: UIViewController {
         self.menuView.commitMenuViewUpdate()
         self.calendarView.commitCalendarViewUpdate()
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    //timeline try
+    class StopListTableViewCell :UITableViewCell{
+    @IBOutlet weak var timeListView: UIView!
+        
     }
 }
 extension TodayController: CVCalendarViewDelegate, CVCalendarMenuViewDelegate
